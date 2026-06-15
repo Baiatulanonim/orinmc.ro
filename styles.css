@@ -13,8 +13,8 @@
   --c-bg:        #0e000d;
   --c-bg-alt:    #150011;
   --c-surface:   #1b0018;
-  --c-card:      #200019;
-  --c-card-h:    #2b0024;
+  --c-card:      rgba(28, 0, 22, 0.72);
+  --c-card-h:    rgba(38, 0, 31, 0.88);
 
   --c-border:    rgba(213,50,215,0.22);
   --c-border-s:  rgba(213,50,215,0.08);
@@ -46,11 +46,25 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-h);
   font-size: 16px;
+  min-height: 100%;
 }
 
 body {
   font-family: var(--font-b);
-  background: var(--c-bg);
+  /*
+    Fundal unic pe toată pagina — gradient fix în viewport.
+    Secțiunile sunt transparente și "plutesc" deasupra lui.
+  */
+  background:
+    radial-gradient(ellipse at 15% 8%,  rgba(213,50,215,0.30) 0%, transparent 38%),
+    radial-gradient(ellipse at 85% 18%, rgba(153,1,143,0.38) 0%, transparent 42%),
+    radial-gradient(ellipse at 30% 38%, rgba(153,1,143,0.20) 0%, transparent 35%),
+    radial-gradient(ellipse at 75% 52%, rgba(213,50,215,0.22) 0%, transparent 38%),
+    radial-gradient(ellipse at 10% 65%, rgba(213,50,215,0.18) 0%, transparent 35%),
+    radial-gradient(ellipse at 90% 78%, rgba(153,1,143,0.28) 0%, transparent 40%),
+    radial-gradient(ellipse at 45% 88%, rgba(213,50,215,0.20) 0%, transparent 36%),
+    linear-gradient(160deg, #2c0029 0%, #0e000d 30%, #1a000e 58%, #26001f 82%, #160012 100%);
+  background-attachment: fixed;
   color: var(--c-text);
   line-height: 1.7;
   overflow-x: hidden;
@@ -274,12 +288,7 @@ section { padding: 96px 0; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse at 25% 45%, rgba(213,50,215,0.38) 0%, transparent 52%),
-    radial-gradient(ellipse at 78% 20%, rgba(153,1,143,0.45) 0%, transparent 48%),
-    radial-gradient(ellipse at 55% 90%, rgba(153,1,143,0.28) 0%, transparent 45%),
-    radial-gradient(ellipse at 10% 80%, rgba(213,50,215,0.20) 0%, transparent 40%),
-    linear-gradient(160deg, #2a0028 0%, #0e000d 40%, #1c000c 70%, #250020 100%);
+  background: transparent;
 }
 
 #particleCanvas {
@@ -299,7 +308,8 @@ section { padding: 96px 0; }
 
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to bottom, transparent 45%, #0e000d 100%);
+  /* fade subtil spre secțiunea următoare */
+  background: linear-gradient(to bottom, transparent 50%, rgba(14,0,13,0.5) 100%);
   pointer-events: none;
 }
 
@@ -379,10 +389,7 @@ section { padding: 96px 0; }
 
 /* ── 8. MODURI DE JOC ── */
 .game-modes {
-  background:
-    radial-gradient(ellipse at 80% 50%, rgba(153,1,143,0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 15% 30%, rgba(213,50,215,0.10) 0%, transparent 45%),
-    var(--c-bg-alt);
+  background: transparent;
   border-top: 1px solid rgba(213,50,215,0.15);
 }
 
@@ -395,6 +402,8 @@ section { padding: 96px 0; }
 .game-card {
   position: relative;
   background: var(--c-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--c-border);
   border-radius: var(--r-xl);
   padding: 38px 34px;
@@ -492,10 +501,7 @@ section { padding: 96px 0; }
 
 /* ── 9. STAFF ── */
 .staff-section {
-  background:
-    radial-gradient(ellipse at 20% 60%, rgba(213,50,215,0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 85% 20%, rgba(153,1,143,0.10) 0%, transparent 45%),
-    var(--c-bg);
+  background: transparent;
   border-top: 1px solid rgba(213,50,215,0.15);
 }
 
@@ -538,6 +544,8 @@ section { padding: 96px 0; }
 
 .staff-card {
   background: var(--c-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--c-border-s);
   border-radius: var(--r-lg);
   padding: 26px 22px;
@@ -616,10 +624,7 @@ section { padding: 96px 0; }
 
 /* ── 10. BENEFICII (asimetric) ── */
 .benefits-section {
-  background:
-    radial-gradient(ellipse at 90% 80%, rgba(213,50,215,0.16) 0%, transparent 50%),
-    radial-gradient(ellipse at 10% 20%, rgba(153,1,143,0.18) 0%, transparent 48%),
-    var(--c-bg-alt);
+  background: transparent;
   border-top: 1px solid rgba(213,50,215,0.15);
 }
 
@@ -639,6 +644,8 @@ section { padding: 96px 0; }
 
 .benefit-card {
   background: var(--c-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--c-border-s);
   border-radius: var(--r-lg);
   padding: 28px 26px;
@@ -692,10 +699,8 @@ section { padding: 96px 0; }
 
 /* ── 11. CONECTARE ── */
 .connect-section {
-  background:
-    radial-gradient(ellipse at 50% 30%, rgba(153,1,143,0.20) 0%, transparent 55%),
-    radial-gradient(ellipse at 90% 80%, rgba(213,50,215,0.12) 0%, transparent 45%),
-    var(--c-bg);
+  background: transparent;
+  border-top: 1px solid rgba(213,50,215,0.15);
 }
 
 .connect-grid {
@@ -707,6 +712,8 @@ section { padding: 96px 0; }
 
 .connect-card {
   background: var(--c-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--c-border);
   border-radius: var(--r-xl);
   padding: 38px 34px;
@@ -833,9 +840,8 @@ section { padding: 96px 0; }
 
 /* ── 12. FOOTER ── */
 .footer {
-  background:
-    radial-gradient(ellipse at 30% 50%, rgba(153,1,143,0.15) 0%, transparent 55%),
-    var(--c-surface);
+  background: rgba(14, 0, 13, 0.55);
+  backdrop-filter: blur(8px);
   border-top: 1px solid var(--c-border);
   padding: 44px 0 26px;
 }
