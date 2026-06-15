@@ -127,24 +127,24 @@ function showToast(toastEl, duration = 2200) {
       {
         id: 'fondatori', title: 'Fondatori', icon: '🥇',
         members: [
-          { name: 'Bandana',     role: 'Fondator', icon: '🥇', description: 'A zis că face un server. L-a și făcut. Aia e.' },
-          { name: 'Ianis68',     role: 'Fondator', icon: '🥇', description: 'Știe de fiecare bug înainte să-l raportezi. Nu înțelegem nici noi cum.' },
-          { name: 'eusuntcris',  role: 'Fondator', icon: '🥇', description: 'Responsabil de toate evenimentele haotice. Staff-ul îl adoră și îl teme în același timp.' },
+          { name: 'Bandana',     role: 'Fondator', icon: '🥇', description: 'A zis că face un server. Toată lumea a zis că e prea mult de muncă. L-a făcut oricum. Acum ești tu pe el.' },
+          { name: 'Ianis68',     role: 'Fondator', icon: '🥇', description: 'Dacă e ceva stricat la 3 noaptea, Ianis68 știe deja. Nu înțelegem nici noi cum, dar știe.' },
+          { name: 'eusuntcris',  role: 'Fondator', icon: '🥇', description: 'Responsabil de jumătate din ideile bune și toate evenimentele haotice de pe server. Staff-ul îl adoră și îl teme în egală măsură.' },
         ],
       },
       {
         id: 'co-fondatori', title: 'Co-Fondatori', icon: '🥈',
         members: [
-          { name: 'Johannis', role: 'Co-Fondator', icon: '🥈', description: 'Scrie-i dacă ai o problemă. O să răspundă.' },
-          { name: 'Cretzu',   role: 'Co-Fondator', icon: '🥈', description: 'Nu tolerează cheat-eri. Nu tolerează drama. Atât.' },
-          { name: 'JonhyXD',  role: 'Co-Fondator', icon: '🥈', description: 'Dacă pe server e ceva fun, el e de vină. În sens bun.' },
-          { name: 'Aspect',   role: 'Co-Fondator', icon: '🥈', description: 'Citește feedbackul și chiar face ceva cu el. Știm, e rar.' },
+          { name: 'Johannis', role: 'Co-Fondator', icon: '🥈', description: 'Cel mai accesibil din staff. Dacă ai o problemă și nu știi cui să-i scrii, scrie-i lui. O să răspundă.' },
+          { name: 'Cretzu',   role: 'Co-Fondator', icon: '🥈', description: 'Nu tolerează cheat-eri. Nu tolerează drama. Cam atât tolerează. Dar e corect — și asta contează.' },
+          { name: 'JonhyXD',  role: 'Co-Fondator', icon: '🥈', description: 'Dacă pe server s-a organizat ceva mișto, JonhyXD a avut de-a face cu asta. Garantat. Omul nu se plictisește niciodată.' },
+          { name: 'Aspect',   role: 'Co-Fondator', icon: '🥈', description: 'Citește feedbackul jucătorilor și chiar face ceva cu el. Știm, e rar. Există și el.' },
         ],
       },
       {
         id: 'development', title: 'Development', icon: '💻',
         members: [
-          { name: 'non name', role: 'High Developer & Web Developer', icon: '💻', featured: true, description: 'A făcut site-ul ăsta. Și plugin-urile. Și tot restul tehnic. Nu întrebați cum.' },
+          { name: 'non name', role: 'High Developer & Web Developer', icon: '💻', featured: true, description: 'A scris site-ul ăsta. Și plugin-urile de pe server. Și mai repară ceva chiar acum, în timp ce citești asta.' },
         ],
       },
     ],
