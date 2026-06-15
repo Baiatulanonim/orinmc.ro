@@ -455,24 +455,44 @@ button { cursor: pointer; font-family: var(--font-b); }
 .dece .sec-h { margin-bottom: 28px; }
 
 .dece-list {
-  max-width: 560px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 680px;
 }
 .dece-list li {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text);
-  padding: 14px 0;
-  border-bottom: 1px solid var(--border-s);
-  line-height: 1.4;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px 24px;
+  background: var(--card);
+  border: 1px solid var(--border-s);
+  border-radius: 12px;
+  transition: border-color var(--t), background var(--t);
 }
-.dece-list li:first-child { border-top: 1px solid var(--border-s); }
-.dece-list li em {
-  font-style: normal;
-  font-weight: 400;
-  color: var(--dim);
-  font-size: 0.88rem;
-  margin-left: 6px;
+.dece-list li:hover {
+  border-color: var(--pink);
+  background: var(--card-h);
+}
+.dece-icon {
+  font-size: 1.7rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.dece-list strong {
+  display: block;
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.dece-list p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
 }
 
 /* ── conectare ── */
