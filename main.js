@@ -283,7 +283,7 @@
   const container = document.getElementById('staffContainer');
   if (!container) return;
 
-  /* Date hardcodate — fallback când fetch nu funcționează (ex: file://) */
+  /* Fallback local — identic cu data/staff.json, activ când fetch nu funcționează (ex: file://) */
   const STAFF_FALLBACK = {
     groups: [
       {
@@ -291,15 +291,15 @@
         members: [
           {
             name: 'Bandana', role: 'Fondator', icon: '🥇',
-            description: 'Vizionarul din spatele proiectului Crash SMP. Bandana a pornit totul de la zero, cu o idee simplă dar puternică: să creeze un server unde orice jucător se simte acasă și are un motiv să revină în fiecare zi.',
+            description: 'A zis că face un server. Toată lumea a zis că e prea mult de muncă. L-a făcut oricum. Acum ești tu pe el.',
           },
           {
             name: 'Ianis68', role: 'Fondator', icon: '🥇',
-            description: 'Cu ani de experiență în gaming și management de comunități online, Ianis68 este forța strategică din spatele Crash SMP. Atent la detalii și mereu cu ochii pe feedback-ul jucătorilor.',
+            description: 'Dacă e ceva stricat la 3 noaptea, Ianis68 știe deja. Nu înțelegem nici noi cum, dar știe.',
           },
           {
             name: 'eusuntcris', role: 'Fondator', icon: '🥇',
-            description: 'Sufletul creativ al echipei fondatoare. eusuntcris aduce energie proaspătă și idei inovatoare constant, asigurând că fiecare update și eveniment surprinde și încântă comunitatea.',
+            description: 'Responsabil de jumătate din ideile bune și toate evenimentele haotice de pe server. Staff-ul îl adoră și îl teme în egală măsură.',
           },
         ],
       },
@@ -308,19 +308,19 @@
         members: [
           {
             name: 'Johannis', role: 'Co-Fondator', icon: '🥈',
-            description: 'Johannis este fața prietenoasă a staffului. Se ocupă de relațiile cu comunitatea și de menținerea unui mediu pozitiv pe server. Mereu disponibil pentru un sfat sau o sesiune de joc împreună.',
+            description: 'Cel mai accesibil din staff. Dacă ai o problemă și nu știi cui să-i scrii, scrie-i lui. O să răspundă.',
           },
           {
             name: 'Cretzu', role: 'Co-Fondator', icon: '🥈',
-            description: 'Expert în moderare și echilibrul gameplay-ului, Cretzu asigură că regulile sunt respectate și că fiecare jucător are parte de o experiență corectă. Ferm, dar drept — exact ce vrei de la un staff.',
+            description: 'Nu tolerează cheat-eri. Nu tolerează drama. Cam atât tolerează. Dar e corect — și asta contează.',
           },
           {
             name: 'JonhyXD', role: 'Co-Fondator', icon: '🥈',
-            description: 'Cu umor și energie contagioasă, JonhyXD animă comunitatea și pune suflet în fiecare eveniment organizat. Dacă pe server e distracție, cu siguranță JonhyXD e undeva în spate cu un plan.',
+            description: 'Dacă pe server s-a organizat ceva mișto, JonhyXD a avut de-a face cu asta. Garantat. Omul nu se plictisește niciodată.',
           },
           {
             name: 'Aspect', role: 'Co-Fondator', icon: '🥈',
-            description: 'Aspect este strategul din umbră al echipei — analizează feedback-ul jucătorilor cu atenție, propune îmbunătățiri concrete și se asigură că serverul evoluează constant în direcția potrivită.',
+            description: 'Citește feedbackul jucătorilor și chiar face ceva cu el. Știm, e rar. Există și el.',
           },
         ],
       },
@@ -329,7 +329,7 @@
         members: [
           {
             name: 'non name', role: 'High Developer & Web Developer', icon: '💻', featured: true,
-            description: 'Omul care se asigură că sistemele și site-ul funcționează perfect! non name este arhitectul tehnic al Crash SMP — de la plugin-uri personalizate și optimizări de server, până la interfața web pe care o admiri chiar acum. Codul este arta lui.',
+            description: 'A scris site-ul ăsta. Și plugin-urile de pe server. Și mai repară ceva chiar acum, în timp ce citești asta.',
           },
         ],
       },
