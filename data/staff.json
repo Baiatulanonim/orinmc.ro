@@ -2,71 +2,136 @@
   "groups": [
     {
       "id": "fondatori",
-      "title": "Fondatori",
-      "icon": "🥇",
+      "badge": "★ Fondatori",
+      "badgeClass": "rol-f",
       "members": [
         {
+          "id": "bandana",
+          "litera": "B",
           "name": "Bandana",
           "role": "Fondator",
-          "icon": "🥇",
-          "description": "A zis că face un server. Toată lumea a zis că e prea mult de muncă. L-a făcut oricum. Acum ești tu pe el."
+          "bio": "A zis că face un server. Toată lumea a zis că e prea mult de muncă. L-a făcut oricum. Acum ești tu pe el.",
+          "desc": "Ideea întreagă a pornit de la el. Ia deciziile mari, stabilește direcția serverului și se asigură că lucrurile merg conform planului. Fără Bandana, <strong>Crash SMP</strong> nu ar fi existat.",
+          "taguri": ["Fondator", "Owner", "Builder", "PvP"],
+          "stats": [
+            { "nr": "#1", "text": "Fondator" },
+            { "nr": "∞",  "text": "Dedicare" },
+            { "nr": "⭐", "text": "Vizionar" }
+          ]
         },
         {
+          "id": "ianis68",
+          "litera": "I",
           "name": "Ianis68",
           "role": "Fondator",
-          "icon": "🥇",
-          "description": "Dacă e ceva stricat la 3 noaptea, Ianis68 știe deja. Nu înțelegem nici noi cum, dar știe."
+          "bio": "Dacă e ceva stricat la 3 noaptea, Ianis68 știe deja. Nu înțelegem nici noi cum, dar știe.",
+          "desc": "Se ocupă de administrare și coordonează echipa de staff. Dacă ceva nu merge cum trebuie, el e primul care știe și primul care rezolvă. <strong>Eficiență maximă</strong>, întotdeauna.",
+          "taguri": ["Fondator", "Owner", "Admin", "Manager"],
+          "stats": [
+            { "nr": "#1",   "text": "Fondator" },
+            { "nr": "100%", "text": "Activ"    },
+            { "nr": "⚡",   "text": "Eficient" }
+          ]
         },
         {
+          "id": "eusuntcris",
+          "litera": "C",
           "name": "eusuntcris",
           "role": "Fondator",
-          "icon": "🥇",
-          "description": "Responsabil de jumătate din ideile bune și toate evenimentele haotice de pe server. Staff-ul îl adoră și îl teme în egală măsură."
+          "bio": "Responsabil de jumătate din ideile bune și toate evenimentele haotice de pe server. Staff-ul îl adoră și îl teme în egală măsură.",
+          "desc": "Vocea comunității. Gestionează Discord-ul, postează anunțurile și menține legătura cu jucătorii. Dacă ai o întrebare, el răspunde. <strong>Comunitatea e prioritatea lui.</strong>",
+          "taguri": ["Fondator", "Owner", "Community", "Discord"],
+          "stats": [
+            { "nr": "#1", "text": "Fondator" },
+            { "nr": "🎨", "text": "Creativ"  },
+            { "nr": "💡", "text": "Inovator" }
+          ]
         }
       ]
     },
     {
       "id": "co-fondatori",
-      "title": "Co-Fondatori",
-      "icon": "🥈",
+      "badge": "◆ Co-Fondatori",
+      "badgeClass": "rol-c",
       "members": [
         {
+          "id": "johannis",
+          "litera": "J",
           "name": "Johannis",
           "role": "Co-Fondator",
-          "icon": "🥈",
-          "description": "Cel mai accesibil din staff. Dacă ai o problemă și nu știi cui să-i scrii, scrie-i lui. O să răspundă."
+          "bio": "Cel mai accesibil din staff. Dacă ai o problemă și nu știi cui să-i scrii, scrie-i lui. O să răspundă.",
+          "desc": "Se ocupă de moderare și aplică regulamentul. <strong>Joc corect pentru toți</strong> e treaba lui — și o ia în serios. Nu tolerează abuzurile, dar e fair cu toată lumea.",
+          "taguri": ["Co-Fondator", "Admin", "Moderator", "Fair Play"],
+          "stats": [
+            { "nr": "A+",  "text": "Moderare" },
+            { "nr": "🛡️", "text": "Fair Play" },
+            { "nr": "⚡",  "text": "Rapid"    }
+          ]
         },
         {
+          "id": "cretzu",
+          "litera": "C",
           "name": "Cretzu",
           "role": "Co-Fondator",
-          "icon": "🥈",
-          "description": "Nu tolerează cheat-eri. Nu tolerează drama. Cam atât tolerează. Dar e corect — și asta contează."
+          "bio": "Nu tolerează cheat-eri. Nu tolerează drama. Cam atât tolerează. Dar e corect — și asta contează.",
+          "desc": "Organizează evenimentele și concursurile. Dacă există un <strong>turneu PvP sau un giveaway</strong>, el e în spatele lui. Energia lui ține comunitatea în viață.",
+          "taguri": ["Co-Fondator", "Admin", "Events", "PvP"],
+          "stats": [
+            { "nr": "🏆", "text": "Events"  },
+            { "nr": "⚡", "text": "Energie" },
+            { "nr": "💜", "text": "Dedicat" }
+          ]
         },
         {
+          "id": "johnyxd",
+          "litera": "J",
           "name": "JonhyXD",
           "role": "Co-Fondator",
-          "icon": "🥈",
-          "description": "Dacă pe server s-a organizat ceva mișto, JonhyXD a avut de-a face cu asta. Garantat. Omul nu se plictisește niciodată."
+          "bio": "Dacă pe server s-a organizat ceva mișto, JonhyXD a avut de-a face cu asta. Garantat. Omul nu se plictisește niciodată.",
+          "desc": "Primul care îți sare în ajutor când ai o problemă. <strong>Suport rapid</strong>, răspunsuri clare și integrare ușoară pentru cei noi — asta e misiunea lui.",
+          "taguri": ["Co-Fondator", "Admin", "Support", "Helper"],
+          "stats": [
+            { "nr": "🤝", "text": "Support" },
+            { "nr": "⚡", "text": "Rapid"   },
+            { "nr": "🎯", "text": "Precis"  }
+          ]
         },
         {
+          "id": "aspect",
+          "litera": "A",
           "name": "Aspect",
           "role": "Co-Fondator",
-          "icon": "🥈",
-          "description": "Citește feedbackul jucătorilor și chiar face ceva cu el. Știm, e rar. Există și el."
+          "bio": "Citește feedbackul jucătorilor și chiar face ceva cu el. Știm, e rar. Există și el.",
+          "desc": "Omul care face serverul să arate bine. Spawn-ul, zonele oficiale, construcțiile care îți fac <strong>prima impresie</strong> — toate sunt ale lui. Ochiul critic al echipei.",
+          "taguri": ["Co-Fondator", "Admin", "Builder", "Design"],
+          "stats": [
+            { "nr": "🔍", "text": "Detalii"  },
+            { "nr": "A+", "text": "Calitate" },
+            { "nr": "🏗️", "text": "Builder"  }
+          ]
         }
       ]
     },
     {
       "id": "development",
-      "title": "Development",
-      "icon": "💻",
+      "badge": "⚙ Development",
+      "badgeClass": "rol-d",
       "members": [
         {
+          "id": "nonname",
+          "litera": "N",
           "name": "non name",
-          "role": "High Developer & Web Developer",
-          "icon": "💻",
-          "featured": true,
-          "description": "A scris site-ul ăsta. Și plugin-urile de pe server. Și mai repară ceva chiar acum, în timp ce citești asta."
+          "role": "High Developer · Web Developer",
+          "rolClass": "rol-cyan",
+          "avatarClass": "avatar-dev",
+          "bio": "A scris site-ul ăsta. Și plugin-urile de pe server. Și mai repară ceva chiar acum, în timp ce citești asta.",
+          "desc": "Face pluginurile care rulează serverul și <strong>site-ul pe care îl citești acum</strong>. Dacă merge totul fără probleme — e meritul lui. Dacă ceva pică, tot el îl repară. Stack: <strong>Java · Node.js · PHP · MySQL · CSS</strong>.",
+          "taguri": ["High Dev", "Web Dev", "Java", "Node.js", "PHP", "MySQL"],
+          "stats": [
+            { "nr": "∞",     "text": "Bug Fixes" },
+            { "nr": "99.9%", "text": "Uptime"    },
+            { "nr": "🚀",    "text": "Perf"      }
+          ]
         }
       ]
     }
