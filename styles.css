@@ -352,20 +352,6 @@ button { cursor: pointer; font-family: var(--font-b); }
   letter-spacing: 0.5px;
 }
 
-.jocuri-cta {
-  font-size: 0.9rem;
-  color: var(--muted);
-  text-align: center;
-}
-.jocuri-cta strong { color: var(--text); }
-.jocuri-cta a {
-  color: var(--pink);
-  text-decoration: underline;
-  text-decoration-color: rgba(213,50,215,0.4);
-  transition: text-decoration-color var(--t);
-}
-.jocuri-cta a:hover { text-decoration-color: var(--pink); }
-
 /* ── staff ── */
 .staff-section {
   padding: 80px 0;
