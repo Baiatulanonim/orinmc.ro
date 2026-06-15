@@ -1,0 +1,19 @@
+{
+  "name": "crashsmp-website",
+  "version": "1.0.0",
+  "description": "Website oficial pentru serverul de Minecraft CRASH SMP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev":   "node server.js"
+  },
+  "keywords": ["minecraft", "crashsmp", "server", "website"],
+  "author": "non name (High Developer & Web Developer)",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

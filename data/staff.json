@@ -1,0 +1,74 @@
+{
+  "groups": [
+    {
+      "id": "fondatori",
+      "title": "Fondatori",
+      "icon": "🥇",
+      "members": [
+        {
+          "name": "Bandana",
+          "role": "Fondator",
+          "icon": "🥇",
+          "description": "Vizionarul din spatele proiectului Crash SMP. Bandana a pornit totul de la zero, cu o idee simplă dar puternică: să creeze un server unde orice jucător se simte acasă și are un motiv să revină în fiecare zi."
+        },
+        {
+          "name": "Ianis68",
+          "role": "Fondator",
+          "icon": "🥇",
+          "description": "Cu ani de experiență în gaming și management de comunități online, Ianis68 este forța strategică din spatele Crash SMP. Atent la detalii și mereu cu ochii pe feedback-ul jucătorilor."
+        },
+        {
+          "name": "eusuntcris",
+          "role": "Fondator",
+          "icon": "🥇",
+          "description": "Sufletul creativ al echipei fondatoare. eusuntcris aduce energie proaspătă și idei inovatoare constant, asigurându-se că fiecare update și eveniment surprinde și încântă comunitatea."
+        }
+      ]
+    },
+    {
+      "id": "co-fondatori",
+      "title": "Co-Fondatori",
+      "icon": "🥈",
+      "members": [
+        {
+          "name": "Johannis",
+          "role": "Co-Fondator",
+          "icon": "🥈",
+          "description": "Johannis este fața prietenoasă a staffului. Se ocupă de relațiile cu comunitatea și de menținerea unui mediu pozitiv pe server. Mereu disponibil pentru un sfat sau o sesiune de joc împreună."
+        },
+        {
+          "name": "Cretzu",
+          "role": "Co-Fondator",
+          "icon": "🥈",
+          "description": "Expert în moderare și echilibrul gameplay-ului, Cretzu asigură că regulile sunt respectate și că fiecare jucător are parte de o experiență corectă. Ferm, dar drept — exact ce vrei de la un staff."
+        },
+        {
+          "name": "JonhyXD",
+          "role": "Co-Fondator",
+          "icon": "🥈",
+          "description": "Cu umor și energie contagioasă, JonhyXD animă comunitatea și pune suflet în fiecare eveniment organizat. Dacă pe server e distracție, cu siguranță JonhyXD e undeva în spate cu un plan."
+        },
+        {
+          "name": "Aspect",
+          "role": "Co-Fondator",
+          "icon": "🥈",
+          "description": "Aspect este strategul din umbră al echipei — analizează feedback-ul jucătorilor cu atenție, propune îmbunătățiri concrete și se asigură că serverul evoluează constant în direcția potrivită."
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "title": "Development",
+      "icon": "💻",
+      "members": [
+        {
+          "name": "non name",
+          "role": "High Developer & Web Developer",
+          "icon": "💻",
+          "description": "Omul care se asigură că sistemele și site-ul funcționează perfect! non name este arhitectul tehnic al Crash SMP — de la plugin-uri personalizate și optimizări de server, până la interfața web pe care o admiri chiar acum. Codul este arta lui.",
+          "featured": true
+        }
+      ]
+    }
+  ]
+}
