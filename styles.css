@@ -153,7 +153,7 @@ button { cursor: pointer; font-family: var(--font-b); }
   border-radius: 50px;
   transition: all var(--t);
 }
-.nav-dc:hover { background: var(--pink); color: #fff; }
+.nav-dc:hover { background: rgba(213,50,215,0.1); }
 
 .nav-toggle {
   display: none;
@@ -241,7 +241,7 @@ button { cursor: pointer; font-family: var(--font-b); }
   display: flex;
   align-items: center;
   gap: 12px;
-  background: var(--card);
+  background: transparent;
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 14px 24px;
@@ -250,7 +250,7 @@ button { cursor: pointer; font-family: var(--font-b); }
 }
 .btn-ip:hover {
   border-color: var(--pink);
-  background: var(--card-h);
+  background: rgba(213,50,215,0.06);
 }
 .btn-ip code {
   font-family: 'Courier New', monospace;
@@ -271,15 +271,16 @@ button { cursor: pointer; font-family: var(--font-b); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--grad);
-  color: #fff;
+  background: transparent;
+  color: var(--pink);
   font-weight: 600;
   font-size: 0.95rem;
-  padding: 14px 28px;
+  padding: 13px 28px;
   border-radius: 10px;
-  transition: opacity var(--t), transform var(--t);
+  border: 1px solid var(--pink);
+  transition: background var(--t), color var(--t);
 }
-.btn-dc:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn-dc:hover { background: rgba(213,50,215,0.1); }
 
 /* toast */
 .toast {
@@ -549,8 +550,8 @@ button { cursor: pointer; font-family: var(--font-b); }
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: rgba(213,50,215,0.1);
-  border: 1px solid rgba(213,50,215,0.25);
+  background: transparent;
+  border: 1px solid rgba(213,50,215,0.35);
   border-radius: 6px;
   padding: 6px 12px;
   color: var(--pink);
@@ -559,8 +560,8 @@ button { cursor: pointer; font-family: var(--font-b); }
   transition: all var(--t);
   white-space: nowrap;
 }
-.btn-copy:hover { background: rgba(213,50,215,0.2); }
-.btn-copy.copied { color: #4ade80; background: rgba(74,222,128,0.1); border-color: rgba(74,222,128,0.25); }
+.btn-copy:hover { background: rgba(213,50,215,0.08); }
+.btn-copy.copied { color: #4ade80; background: transparent; border-color: rgba(74,222,128,0.35); }
 
 .connect-note {
   font-size: 0.72rem;
@@ -572,17 +573,18 @@ button { cursor: pointer; font-family: var(--font-b); }
 
 .btn-dc-big {
   display: block;
-  background: var(--grad);
-  color: #fff;
+  background: transparent;
+  color: var(--pink);
   font-size: 1rem;
   font-weight: 700;
-  padding: 16px 24px;
+  padding: 15px 24px;
   border-radius: 10px;
+  border: 1px solid var(--pink);
   text-align: center;
   margin-bottom: 10px;
-  transition: opacity var(--t), transform var(--t);
+  transition: background var(--t), color var(--t);
 }
-.btn-dc-big:hover { opacity: 0.87; transform: translateY(-1px); }
+.btn-dc-big:hover { background: rgba(213,50,215,0.1); }
 
 .connect-final {
   text-align: center;
