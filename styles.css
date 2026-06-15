@@ -10,18 +10,18 @@
   --c-primary-glow: rgba(213,50,215,0.38);
   --c-gradient:     linear-gradient(135deg, var(--c-primary), var(--c-secondary));
 
-  --c-bg:        #07070f;
-  --c-bg-alt:    #0b0b17;
-  --c-surface:   #100f1e;
-  --c-card:      #141325;
-  --c-card-h:    #1a1933;
+  --c-bg:        #0e000d;
+  --c-bg-alt:    #150011;
+  --c-surface:   #1b0018;
+  --c-card:      #200019;
+  --c-card-h:    #2b0024;
 
-  --c-border:    rgba(213,50,215,0.18);
-  --c-border-s:  rgba(255,255,255,0.055);
+  --c-border:    rgba(213,50,215,0.22);
+  --c-border-s:  rgba(213,50,215,0.08);
 
-  --c-text:      #eceaf8;
-  --c-muted:     #8a88aa;
-  --c-dim:       #48466a;
+  --c-text:      #f0eefa;
+  --c-muted:     #c4afc8;
+  --c-dim:       #7a5a7d;
 
   --font-h: 'Orbitron', sans-serif;
   --font-b: 'Poppins',  sans-serif;
@@ -182,7 +182,7 @@ section { padding: 96px 0; }
   transition: background var(--t-m), backdrop-filter var(--t-m), border-color var(--t-m);
 }
 .navbar.scrolled {
-  background: rgba(7,7,15,0.92);
+  background: rgba(14,0,13,0.94);
   backdrop-filter: blur(18px);
   border-bottom-color: var(--c-border);
 }
@@ -275,9 +275,11 @@ section { padding: 96px 0; }
   justify-content: center;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 50% 75%, rgba(153,1,143,0.16) 0%, transparent 58%),
-    radial-gradient(ellipse at 80% 12%, rgba(213,50,215,0.09) 0%, transparent 48%),
-    var(--c-bg);
+    radial-gradient(ellipse at 25% 45%, rgba(213,50,215,0.38) 0%, transparent 52%),
+    radial-gradient(ellipse at 78% 20%, rgba(153,1,143,0.45) 0%, transparent 48%),
+    radial-gradient(ellipse at 55% 90%, rgba(153,1,143,0.28) 0%, transparent 45%),
+    radial-gradient(ellipse at 10% 80%, rgba(213,50,215,0.20) 0%, transparent 40%),
+    linear-gradient(160deg, #2a0028 0%, #0e000d 40%, #1c000c 70%, #250020 100%);
 }
 
 #particleCanvas {
@@ -289,15 +291,15 @@ section { padding: 96px 0; }
 .hero-grid {
   position: absolute; inset: 0;
   background-image:
-    linear-gradient(rgba(213,50,215,0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(213,50,215,0.035) 1px, transparent 1px);
+    linear-gradient(rgba(213,50,215,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(213,50,215,0.07) 1px, transparent 1px);
   background-size: 55px 55px;
   pointer-events: none;
 }
 
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to bottom, transparent 50%, var(--c-bg) 100%);
+  background: linear-gradient(to bottom, transparent 45%, #0e000d 100%);
   pointer-events: none;
 }
 
@@ -377,8 +379,11 @@ section { padding: 96px 0; }
 
 /* ── 8. MODURI DE JOC ── */
 .game-modes {
-  background: var(--c-bg-alt, #0b0b17);
-  border-top: 1px solid rgba(213,50,215,0.12);
+  background:
+    radial-gradient(ellipse at 80% 50%, rgba(153,1,143,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 30%, rgba(213,50,215,0.10) 0%, transparent 45%),
+    var(--c-bg-alt);
+  border-top: 1px solid rgba(213,50,215,0.15);
 }
 
 .game-cards {
@@ -487,8 +492,11 @@ section { padding: 96px 0; }
 
 /* ── 9. STAFF ── */
 .staff-section {
-  background: var(--c-bg);
-  border-top: 1px solid rgba(213,50,215,0.1);
+  background:
+    radial-gradient(ellipse at 20% 60%, rgba(213,50,215,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 20%, rgba(153,1,143,0.10) 0%, transparent 45%),
+    var(--c-bg);
+  border-top: 1px solid rgba(213,50,215,0.15);
 }
 
 .staff-group { margin-bottom: 52px; }
@@ -608,8 +616,11 @@ section { padding: 96px 0; }
 
 /* ── 10. BENEFICII (asimetric) ── */
 .benefits-section {
-  background: var(--c-bg-alt, #0b0b17);
-  border-top: 1px solid rgba(213,50,215,0.1);
+  background:
+    radial-gradient(ellipse at 90% 80%, rgba(213,50,215,0.16) 0%, transparent 50%),
+    radial-gradient(ellipse at 10% 20%, rgba(153,1,143,0.18) 0%, transparent 48%),
+    var(--c-bg-alt);
+  border-top: 1px solid rgba(213,50,215,0.15);
 }
 
 /*
@@ -680,7 +691,12 @@ section { padding: 96px 0; }
 }
 
 /* ── 11. CONECTARE ── */
-.connect-section { background: var(--c-bg); }
+.connect-section {
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(153,1,143,0.20) 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 80%, rgba(213,50,215,0.12) 0%, transparent 45%),
+    var(--c-bg);
+}
 
 .connect-grid {
   display: grid;
@@ -817,7 +833,9 @@ section { padding: 96px 0; }
 
 /* ── 12. FOOTER ── */
 .footer {
-  background: var(--c-surface);
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(153,1,143,0.15) 0%, transparent 55%),
+    var(--c-surface);
   border-top: 1px solid var(--c-border);
   padding: 44px 0 26px;
 }

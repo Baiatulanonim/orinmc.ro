@@ -18,13 +18,13 @@
   let particles = [];
 
   const CFG = {
-    count:        75,
-    colors:       ['#D532D7', '#99018F', '#E870E8', '#f590f5', 'rgba(255,255,255,0.7)'],
-    minR:         0.6,
-    maxR:         2.4,
+    count:        80,
+    colors:       ['#ff88ff', '#f0b0f0', '#ffffff', '#ffd0ff', '#E870E8', '#D532D7'],
+    minR:         0.5,
+    maxR:         2.2,
     speed:        0.28,
-    connectDist:  110,
-    connectAlpha: 0.13,
+    connectDist:  115,
+    connectAlpha: 0.18,
   };
 
   /* Redimensionare canvas la schimbare viewport */
@@ -65,7 +65,7 @@
         const opacity = (1 - dist / CFG.connectDist) * CFG.connectAlpha;
         ctx.save();
         ctx.globalAlpha = opacity;
-        ctx.strokeStyle = '#D532D7';
+        ctx.strokeStyle = '#f090f0';
         ctx.lineWidth   = 0.5;
         ctx.beginPath();
         ctx.moveTo(particles[i].x, particles[i].y);
