@@ -655,3 +655,36 @@ button { cursor: pointer; font-family: var(--font-b); }
   .hero-h1 { letter-spacing: 2px; }
   .sec-h   { font-size: 1.3rem; }
 }
+
+/* ── 3D depth: text ── */
+.hero-h1 {
+  filter:
+    drop-shadow(0 0 30px rgba(213,50,215,0.45))
+    drop-shadow(2px 3px 0 rgba(153,1,143,0.85))
+    drop-shadow(4px 6px 0 rgba(80,0,60,0.5));
+}
+.sec-h {
+  text-shadow:
+    1px 1px 0 rgba(153,1,143,0.55),
+    2px 2px 0 rgba(153,1,143,0.35),
+    3px 3px 8px rgba(0,0,0,0.4);
+}
+
+/* ── 3D tilt cards ── */
+.joc,
+.staff-card,
+.dece-list li,
+.connect-block {
+  will-change: transform;
+  transition: border-color var(--t), background var(--t),
+              opacity 0.55s ease,
+              transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+/* ── button depth press ── */
+.btn-ip:active,
+.btn-dc:active,
+.btn-dc-big:active,
+.btn-copy:active {
+  transform: scale(0.96) translateY(2px);
+}

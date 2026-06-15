@@ -204,3 +204,51 @@ function showToast(toastEl, duration = 2200) {
       .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 }());
+
+/* ── 3D card tilt ── */
+(function Tilt3D() {
+  const INTENSITY = 12;
+  const SCALE     = 1.03;
+
+  function applyTilt(card) {
+    card.addEventListener('mouseenter', onEnter);
+    card.addEventListener('mousemove',  onMove);
+    card.addEventListener('mouseleave', onLeave);
+  }
+
+  function onEnter(e) {
+    e.currentTarget.style.transition =
+      'transform 0.08s ease, box-shadow 0.08s ease, border-color 0.22s ease, background 0.22s ease';
+  }
+
+  function onLeave(e) {
+    const c = e.currentTarget;
+    c.style.transition =
+      'transform 0.4s ease, box-shadow 0.4s ease, border-color 0.22s ease, background 0.22s ease';
+    c.style.transform = '';
+    c.style.boxShadow = '';
+  }
+
+  function onMove(e) {
+    const c    = e.currentTarget;
+    const rect = c.getBoundingClientRect();
+    const x    = (e.clientX - rect.left)  / rect.width  - 0.5;
+    const y    = (e.clientY - rect.top)   / rect.height - 0.5;
+    const rx   = -y * INTENSITY;
+    const ry   =  x * INTENSITY;
+    c.style.transform = `perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) scale(${SCALE})`;
+    c.style.boxShadow = `${-ry * 1.2}px ${rx * 1.2}px 28px rgba(213,50,215,0.18)`;
+  }
+
+  document.querySelectorAll('.joc, .dece-list li, .connect-block').forEach(applyTilt);
+
+  const staffContainer = document.getElementById('staffContainer');
+  if (staffContainer) {
+    new MutationObserver(() => {
+      staffContainer.querySelectorAll('.staff-card:not([data-tilt])').forEach(c => {
+        c.dataset.tilt = '1';
+        applyTilt(c);
+      });
+    }).observe(staffContainer, { childList: true, subtree: true });
+  }
+}());
