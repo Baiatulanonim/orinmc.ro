@@ -8,6 +8,7 @@
         {
           "id": "bandana",
           "litera": "B",
+          "mcUsername": "Bandana",
           "name": "Bandana",
           "role": "Fondator",
           "bio": "A zis că face un server. Toată lumea a zis că e prea mult de muncă. L-a făcut oricum. Acum ești tu pe el.",
@@ -22,6 +23,7 @@
         {
           "id": "ianis68",
           "litera": "I",
+          "mcUsername": "Ianis68",
           "name": "Ianis68",
           "role": "Fondator",
           "bio": "Dacă e ceva stricat la 3 noaptea, Ianis68 știe deja. Nu înțelegem nici noi cum, dar știe.",
@@ -36,6 +38,7 @@
         {
           "id": "eusuntcris",
           "litera": "C",
+          "mcUsername": "eusuntcris",
           "name": "eusuntcris",
           "role": "Fondator",
           "bio": "Responsabil de jumătate din ideile bune și toate evenimentele haotice de pe server. Staff-ul îl adoră și îl teme în egală măsură.",
@@ -57,6 +60,7 @@
         {
           "id": "johannis",
           "litera": "J",
+          "mcUsername": "Johannis",
           "name": "Johannis",
           "role": "Co-Fondator",
           "bio": "Cel mai accesibil din staff. Dacă ai o problemă și nu știi cui să-i scrii, scrie-i lui. O să răspundă.",
@@ -71,6 +75,7 @@
         {
           "id": "cretzu",
           "litera": "C",
+          "mcUsername": "Cretzu",
           "name": "Cretzu",
           "role": "Co-Fondator",
           "bio": "Nu tolerează cheat-eri. Nu tolerează drama. Cam atât tolerează. Dar e corect — și asta contează.",
@@ -85,6 +90,7 @@
         {
           "id": "johnyxd",
           "litera": "J",
+          "mcUsername": "JonhyXD",
           "name": "JonhyXD",
           "role": "Co-Fondator",
           "bio": "Dacă pe server s-a organizat ceva mișto, JonhyXD a avut de-a face cu asta. Garantat. Omul nu se plictisește niciodată.",
@@ -99,6 +105,7 @@
         {
           "id": "aspect",
           "litera": "A",
+          "mcUsername": "Aspect",
           "name": "Aspect",
           "role": "Co-Fondator",
           "bio": "Citește feedbackul jucătorilor și chiar face ceva cu el. Știm, e rar. Există și el.",
@@ -120,6 +127,7 @@
         {
           "id": "nonname",
           "litera": "N",
+          "mcUsername": "nonname",
           "name": "non name",
           "role": "High Developer · Web Developer",
           "rolClass": "rol-cyan",

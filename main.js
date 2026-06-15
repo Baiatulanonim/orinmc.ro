@@ -329,7 +329,18 @@ class ModalStaff {
     const d = this.date[id];
     if (!d) return;
 
-    document.getElementById('modal-av').textContent = d.litera;
+    const avEl = document.getElementById('modal-av');
+    if (d.mcUsername) {
+      const img = document.createElement('img');
+      img.src = `https://mc-heads.net/avatar/${encodeURIComponent(d.mcUsername)}/160`;
+      img.alt = d.name;
+      img.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:inherit;image-rendering:pixelated';
+      img.addEventListener('error', () => { avEl.innerHTML = ''; avEl.textContent = d.litera; });
+      avEl.innerHTML = '';
+      avEl.appendChild(img);
+    } else {
+      avEl.textContent = d.litera;
+    }
     document.getElementById('modal-nm').textContent = d.name;
     document.getElementById('modal-rl').textContent = d.role;
     document.getElementById('modal-desc').innerHTML = d.desc;
@@ -408,7 +419,10 @@ class Staff {
         art.setAttribute('role', 'button');
         art.setAttribute('aria-label', `Profil ${_esc(m.name)}`);
         art.innerHTML = `
-          <div class="${avClass}">${_esc(m.litera)}</div>
+          <div class="${avClass}">
+            ${_esc(m.litera)}
+            ${m.mcUsername ? `<img src="https://mc-heads.net/avatar/${encodeURIComponent(m.mcUsername)}/96" alt="${_esc(m.name)}" loading="lazy">` : ''}
+          </div>
           <span class="nick">${_esc(m.name)}</span>
           <span class="${rolClass}">${_esc(m.role)}</span>
           <span class="bio">${_esc(m.bio)}</span>
