@@ -190,15 +190,7 @@ button { cursor: pointer; font-family: var(--font-b); }
   text-align: center;
 }
 
-.hero-pre {
-  font-family: 'Courier New', monospace;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  color: var(--pink);
-  opacity: 0.65;
-  margin-bottom: 22px;
-  text-transform: lowercase;
-}
+.hero-pre { display: none; }
 
 .hero-h1 {
   font-family: var(--font-h);
@@ -215,23 +207,25 @@ button { cursor: pointer; font-family: var(--font-b); }
 }
 
 .hero-tagline {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-size: clamp(1.15rem, 2.8vw, 1.5rem);
   font-weight: 600;
-  color: var(--text);
-  margin-bottom: 16px;
-  line-height: 1.55;
-}
-.hero-tagline em {
-  font-style: normal;
   color: var(--muted);
-  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 .hero-body {
-  font-size: 0.97rem;
+  font-size: 0.95rem;
   color: var(--muted);
-  margin-bottom: 40px;
-  line-height: 1.8;
+  margin-bottom: 36px;
+  line-height: 1.85;
+}
+.hero-note {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: var(--dim);
+  letter-spacing: 1px;
 }
 
 .hero-actions {
@@ -326,30 +320,17 @@ button { cursor: pointer; font-family: var(--font-b); }
   background: var(--card-h);
 }
 
-.joc__head {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-.joc__emoji { font-size: 1.8rem; line-height: 1; }
-.joc__head h3 {
+.joc h3 {
   font-family: var(--font-h);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: 1px;
-}
-.joc p {
-  font-size: 0.92rem;
-  color: var(--muted);
-  line-height: 1.8;
   margin-bottom: 14px;
 }
-.joc p:last-child { margin-bottom: 0; }
-.joc__tags {
-  font-size: 0.76rem !important;
-  color: var(--dim) !important;
-  letter-spacing: 0.5px;
+.joc p {
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.82;
 }
 
 /* ── staff ── */
@@ -471,37 +452,27 @@ button { cursor: pointer; font-family: var(--font-b); }
   padding: 80px 0;
   border-top: 1px solid var(--border-s);
 }
-.dece .sec-h { margin-bottom: 36px; }
+.dece .sec-h { margin-bottom: 28px; }
 
 .dece-list {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  max-width: 680px;
+  max-width: 560px;
+  list-style: none;
 }
 .dece-list li {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-}
-.dece-list > li > span {
-  font-size: 1.7rem;
-  line-height: 1;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-.dece-list strong {
-  display: block;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--text);
-  margin-bottom: 4px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-s);
+  line-height: 1.4;
 }
-.dece-list p {
-  font-size: 0.875rem;
-  color: var(--muted);
-  line-height: 1.7;
-  margin: 0;
+.dece-list li:first-child { border-top: 1px solid var(--border-s); }
+.dece-list li em {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--dim);
+  font-size: 0.88rem;
+  margin-left: 6px;
 }
 
 /* ── conectare ── */
