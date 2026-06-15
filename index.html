@@ -3,42 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Crash SMP — server de Minecraft cu OneBlock și SMP. Fără lag, staff activ, comunitate reală." />
-  <meta name="theme-color" content="#D532D7" />
-
-  <meta property="og:title"       content="CRASH SMP" />
-  <meta property="og:description" content="Nu mai căuta. Găsit." />
-  <meta property="og:type"        content="website" />
-
-  <title>CRASH SMP</title>
-
+  <meta name="description" content="Crash SMP — server de Minecraft. IP: crashsmp.ro" />
+  <title>Crash SMP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- NAV -->
   <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo" aria-label="Crash SMP">
-        <span aria-hidden="true">💥</span>
-        <span>CRASH <span class="logo-accent">SMP</span></span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Deschide meniu" aria-expanded="false" aria-controls="navLinks">
+    <div class="nav-wrap">
+      <a href="#" class="nav-logo">💥 crash smp</a>
+      <button class="nav-toggle" id="navToggle" aria-label="meniu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-
-      <nav id="navLinks" class="nav-links" aria-label="Navigare">
+      <nav id="navLinks" class="nav-links">
         <ul>
-          <li><a href="#sectiuni"  class="nav-link">Jocuri</a></li>
-          <li><a href="#staff"     class="nav-link">Staff</a></li>
-          <li><a href="#dece"      class="nav-link">De ce noi</a></li>
-          <li><a href="#conectare" class="nav-link">Conectare</a></li>
-          <li><a href="https://discord.gg/89Wh9UySCt" target="_blank" rel="noopener noreferrer" class="nav-btn">Discord</a></li>
+          <li><a href="#jocuri"    class="nav-link">jocuri</a></li>
+          <li><a href="#staff"     class="nav-link">staff</a></li>
+          <li><a href="#conectare" class="nav-link">conectare</a></li>
+          <li><a href="https://discord.gg/89Wh9UySCt" target="_blank" rel="noopener noreferrer" class="nav-dc">discord</a></li>
         </ul>
       </nav>
     </div>
@@ -46,236 +31,185 @@
 
   <main>
 
-    <!-- ══ HERO ══ -->
+    <!-- ── HERO ── -->
     <section class="hero" id="hero">
-      <canvas id="particleCanvas" aria-hidden="true"></canvas>
-      <div class="hero-grid"    aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-inner">
 
-      <div class="hero-content">
+        <p class="hero-pre">java · 1.20+ · crashsmp.ro</p>
 
-        <p class="hero-kicker">crashsmp.ro &nbsp;·&nbsp; java edition</p>
-
-        <h1 class="hero-title">
-          <span class="title-main">💥 CRASH SMP</span>
-          <span class="title-sub">nu mai căuta.<br>găsit.</span>
+        <h1 class="hero-h1">
+          CRASH SMP
         </h1>
 
-        <p class="hero-desc">
-          Te-ai plictisit de servere pe care nu se întâmplă nimic?
-          Crash SMP e altceva — OneBlock cu progres real, SMP fără lag,
-          și un staff care chiar există.
+        <p class="hero-tagline">
+          cel mai bun server pe care l-ai jucat.<br>
+          <em>dacă nu crezi, testează singur.</em>
         </p>
 
-        <div class="hero-buttons">
-          <a href="#conectare" class="btn btn-primary">⚡ Intră pe server</a>
-          <a href="https://discord.gg/89Wh9UySCt" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">💬 Discord</a>
+        <p class="hero-body">
+          OneBlock cu progres real. SMP fără lag. Staff care răspunde.
+          Atât. Fără promisiuni goale.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-ip" id="heroIpBtn" type="button">
+            <code>crashsmp.ro</code>
+            <span class="btn-ip__label">apasă să copiezi</span>
+          </button>
+          <a href="https://discord.gg/89Wh9UySCt" target="_blank" rel="noopener noreferrer" class="btn-dc">
+            💬 discord
+          </a>
         </div>
 
-      </div>
+        <div id="heroToast" class="toast" role="status" aria-live="polite">ip copiat ✓</div>
 
-      <div class="hero-scroll-cue" aria-hidden="true">
-        <svg width="16" height="26" viewBox="0 0 16 26" fill="none">
-          <rect x="1" y="1" width="14" height="24" rx="7" stroke="currentColor" stroke-width="1.5"/>
-          <rect x="6.5" y="5" width="3" height="6" rx="1.5" fill="currentColor">
-            <animate attributeName="y" values="5;13;5" dur="2s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
-          </rect>
-        </svg>
       </div>
     </section>
 
-    <!-- ══ MODURI DE JOC ══ -->
-    <section class="game-modes" id="sectiuni">
+    <!-- ── JOCURI ── -->
+    <section class="jocuri" id="jocuri">
       <div class="container">
 
-        <h2 class="section-title" data-animate>🎮 Ce joci la noi</h2>
+        <h2 class="sec-h">ce joci la noi</h2>
 
-        <div class="game-cards" data-animate>
+        <div class="jocuri-grid">
 
-          <article class="game-card">
-            <div class="game-card__glow"   aria-hidden="true"></div>
-            <div class="game-card__corner" aria-hidden="true"></div>
-
-            <span class="game-card__icon" aria-hidden="true">🏝️</span>
-            <div class="game-card__badges">
-              <span class="game-badge">Hardcore Progression</span>
-              <span class="game-badge">Top Players</span>
+          <article class="joc">
+            <div class="joc__head">
+              <span class="joc__emoji">🏝️</span>
+              <h3>OneBlock</h3>
             </div>
-            <h3 class="game-card__title">ONEBLOCK</h3>
-            <p class="game-card__text">
-              Pornești cu un singur bloc în mijlocul nimicului. Îl spargi. Mai apare unul. Asta e tot.
-              Sună simplu? E cel mai adictiv mod de joc care există — și noi l-am făcut și mai bun.
+            <p>
+              Pornești cu un singur bloc în mijlocul nimicului. Îl spargi, mai apare altul.
+              Sună simplu — e cel mai adictiv mod de joc care există.
+              Noi l-am luat și l-am făcut și mai bun.
             </p>
-            <ul class="game-card__features">
-              <li>⚡ Faze cu progres real, nu filler</li>
-              <li>🏆 Clasament vizibil, competiție serioasă</li>
-              <li>💎 Drop-uri rare care merită farming</li>
-            </ul>
-            <a href="#conectare" class="btn btn-outline">Joacă acum</a>
+            <p class="joc__tags">faze reale &nbsp;·&nbsp; clasament &nbsp;·&nbsp; drop-uri rare</p>
           </article>
 
-          <article class="game-card">
-            <div class="game-card__glow"   aria-hidden="true"></div>
-            <div class="game-card__corner" aria-hidden="true"></div>
-
-            <span class="game-card__icon" aria-hidden="true">🌲</span>
-            <div class="game-card__badges">
-              <span class="game-badge">No Lag</span>
-              <span class="game-badge">Economy</span>
+          <article class="joc">
+            <div class="joc__head">
+              <span class="joc__emoji">🌲</span>
+              <h3>SMP</h3>
             </div>
-            <h3 class="game-card__title">SMP</h3>
-            <p class="game-card__subtitle-small">Survival Multiplayer</p>
-            <p class="game-card__text">
-              Minecraft survival cum ar trebui să fie — cu oameni care știu să joace, economie
-              care funcționează și un server care nu pică când sunt mai mult de 10 inși online.
+            <p>
+              Survival cum trebuie — cu lume bună, economie reală și server care
+              nu pică când sunt 30 de inși online. Fără lag, fără drama, fără bs.
             </p>
-            <ul class="game-card__features">
-              <li>🚀 Zero lag, garantat</li>
-              <li>🎉 Evenimente care chiar merită</li>
-              <li>🤝 Comunitate care nu e toxică</li>
-            </ul>
-            <a href="#conectare" class="btn btn-outline">Joacă acum</a>
+            <p class="joc__tags">zero lag &nbsp;·&nbsp; economie &nbsp;·&nbsp; evenimente</p>
           </article>
 
         </div>
+
+        <p class="jocuri-cta">
+          ambele sunt pe <strong>crashsmp.ro</strong> —
+          <a href="#conectare">intri cu același IP</a>.
+        </p>
+
       </div>
     </section>
 
-    <!-- ══ STAFF ══ -->
+    <!-- ── STAFF ── -->
     <section class="staff-section" id="staff">
       <div class="container">
 
-        <div class="section-header-group" data-animate>
-          <h2 class="section-title">👑 Cine conduce treaba</h2>
-          <p class="section-desc">Nu boți, nu fantome. Oameni reali care joacă zi de zi.</p>
-        </div>
+        <h2 class="sec-h">cine conduce treaba</h2>
+        <p class="sec-sub">nu boți, nu fantome. oameni reali, care joacă pe server.</p>
 
-        <div id="staffContainer" aria-live="polite">
+        <div id="staffContainer">
           <div class="staff-loading">
-            <div class="loading-spinner" aria-hidden="true"></div>
-            <p>Se încarcă echipa...</p>
+            <div class="spinner" aria-hidden="true"></div>
+            <p>se încarcă...</p>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- ══ DE CE NOI ══ -->
-    <section class="benefits-section" id="dece">
+    <!-- ── DE CE NOI ── -->
+    <section class="dece" id="dece">
       <div class="container">
 
-        <h2 class="section-title" data-animate>✨ De ce Crash SMP?</h2>
+        <h2 class="sec-h">de ce crash smp?</h2>
 
-        <div class="benefits-grid" data-animate>
-
-          <article class="benefit-card benefit-card--wide">
-            <span class="benefit-icon" aria-hidden="true">🚀</span>
-            <div class="benefit-body">
-              <h3 class="benefit-title">Funcționează, pur și simplu</h3>
-              <p class="benefit-text">
-                Nu promitem performanță — o livrăm. Serverul e optimizat de non name
-                și nu l-am văzut picat odată de când rulează. Dacă ai lag, e net-ul tău.
-              </p>
+        <ul class="dece-list">
+          <li>
+            <span aria-hidden="true">🚀</span>
+            <div>
+              <strong>serverul merge</strong>
+              <p>optimizat de non name. n-am văzut lag de când rulează. dacă ai lag, e net-ul tău.</p>
             </div>
-          </article>
-
-          <article class="benefit-card">
-            <span class="benefit-icon" aria-hidden="true">🤝</span>
-            <h3 class="benefit-title">Staff-ul există</h3>
-            <p class="benefit-text">
-              Scrii în Discord, primești răspuns. Nu după 3 zile — rapid.
-              Oameni reali, nu auto-reply.
-            </p>
-          </article>
-
-          <article class="benefit-card">
-            <span class="benefit-icon" aria-hidden="true">🎉</span>
-            <h3 class="benefit-title">Se întâmplă lucruri</h3>
-            <p class="benefit-text">
-              Giveaway-uri, PvP, concursuri de construit. Nu o dată pe lună —
-              regulat. Mereu ai un motiv să intri.
-            </p>
-          </article>
-
-          <article class="benefit-card benefit-card--wide">
-            <span class="benefit-icon" aria-hidden="true">🛡️</span>
-            <div class="benefit-body">
-              <h3 class="benefit-title">Fără cheater-i, fără bs</h3>
-              <p class="benefit-text">
-                Anti-cheat serios + staff activ = joc corect. Nu tolerăm cheat-ul,
-                nu tolerăm toxicitatea. Cine vrea să strice jocul altora are un singur drum — afară.
-              </p>
+          </li>
+          <li>
+            <span aria-hidden="true">🤝</span>
+            <div>
+              <strong>stafful răspunde</strong>
+              <p>scrii, primești răspuns. nu auto-reply, nu după 3 zile. oameni reali.</p>
             </div>
-          </article>
+          </li>
+          <li>
+            <span aria-hidden="true">🎉</span>
+            <div>
+              <strong>se întâmplă lucruri</strong>
+              <p>pvp, build contest, giveaway-uri care chiar merită. nu o dată la 3 luni.</p>
+            </div>
+          </li>
+          <li>
+            <span aria-hidden="true">🛡️</span>
+            <div>
+              <strong>zero toleranță la cheat-eri</strong>
+              <p>anti-cheat serios + staff activ. cine strica jocul altora are un singur drum — afară.</p>
+            </div>
+          </li>
+        </ul>
 
-        </div>
       </div>
     </section>
 
-    <!-- ══ CONECTARE ══ -->
-    <section class="connect-section" id="conectare">
+    <!-- ── CONECTARE ── -->
+    <section class="conectare" id="conectare">
       <div class="container">
 
-        <h2 class="section-title" data-animate>🔌 Intri sau nu?</h2>
+        <h2 class="sec-h">intri sau nu?</h2>
 
-        <div class="connect-grid" data-animate>
+        <div class="connect-wrap">
 
-          <div class="connect-card">
-            <span class="connect-icon" aria-hidden="true">📌</span>
-            <h3 class="connect-title">IP Server</h3>
-            <div class="ip-display">
-              <code class="ip-text" id="serverIP">crashsmp.ro</code>
-              <button class="btn-copy" id="copyBtn" type="button" aria-label="Copiază IP-ul serverului">
-                <span class="copy-icon" aria-hidden="true">📋</span>
-                <span class="copy-text">Copiază IP</span>
+          <div class="connect-block">
+            <p class="connect-label">📌 ip server</p>
+            <div class="ip-row">
+              <code id="serverIP">crashsmp.ro</code>
+              <button class="btn-copy" id="copyBtn" type="button" aria-label="copiază ip">
+                <span class="ci" aria-hidden="true">📋</span>
+                <span class="ct">copiază</span>
               </button>
             </div>
-            <p class="connect-hint">Java Edition &bull; 1.20+</p>
-            <div id="copyToast" class="copy-toast" role="status" aria-live="polite">✅ Copiat!</div>
+            <p class="connect-note">java edition · 1.20+</p>
+            <div id="copyToast" class="toast" role="status" aria-live="polite">ip copiat ✓</div>
           </div>
 
-          <div class="connect-card">
-            <span class="connect-icon" aria-hidden="true">💬</span>
-            <h3 class="connect-title">Discord</h3>
-            <div class="discord-display">
-              <code class="discord-link-text">discord.gg/89Wh9UySCt</code>
-            </div>
-            <p class="connect-hint">Suport &bull; Anunțuri &bull; Comunitate</p>
-            <a href="https://discord.gg/89Wh9UySCt" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">
-              💬 Intră pe Discord
+          <div class="connect-block">
+            <p class="connect-label">💬 discord</p>
+            <a href="https://discord.gg/89Wh9UySCt" target="_blank" rel="noopener noreferrer" class="btn-dc-big">
+              intră pe discord
             </a>
+            <p class="connect-note">discord.gg/89Wh9UySCt</p>
           </div>
 
         </div>
 
-        <div class="connect-impact" data-animate>
-          <p>IP-ul e mai sus. Discord-ul e lângă el.</p>
-          <strong>Ce mai aștepți?</strong>
-        </div>
+        <p class="connect-final">
+          ip-ul e sus. discord-ul e lângă el.<br>
+          <strong>ce mai aștepți?</strong>
+        </p>
 
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-inner">
-        <span class="footer-logo">💥 CRASH SMP</span>
-        <nav class="footer-links" aria-label="Linkuri footer">
-          <a href="#sectiuni"  class="footer-link">Jocuri</a>
-          <a href="#staff"     class="footer-link">Staff</a>
-          <a href="#dece"      class="footer-link">De ce noi</a>
-          <a href="#conectare" class="footer-link">Conectare</a>
-          <a href="https://discord.gg/89Wh9UySCt" target="_blank" rel="noopener noreferrer" class="footer-link footer-link--accent">Discord</a>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <p>Crash SMP &copy; <span id="currentYear"></span> — Comunitate de Minecraft.</p>
-        <p>Site de <strong>non name</strong> <span class="dev-role">— High Dev &amp; Web Dev</span></p>
-      </div>
+      <p>Crash SMP &copy; <span id="yr"></span> &nbsp;·&nbsp; <a href="https://discord.gg/89Wh9UySCt" target="_blank" rel="noopener noreferrer">discord</a> &nbsp;·&nbsp; site de <strong>non name</strong></p>
     </div>
   </footer>
 
